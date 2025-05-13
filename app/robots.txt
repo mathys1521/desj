@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /
+Disallow: /dcr-web
+Disallow: /css
+Disallow: /img
+Disallow: /js
+Disallow: /inclu

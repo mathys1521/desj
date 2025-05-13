@@ -1,0 +1,105 @@
+/* Styles supplémentaires */
+body {
+    background-color: #f2f2f2;
+}
+
+.top-header .top-header-separator,
+.footer .footer-separator {
+    margin: 0 8px;
+    color: #ebdcdc;
+    border-left: 1px solid #ffffff;
+}
+
+.bottom-header .logo-desjardins {
+    height: 60px;
+}
+
+.accesd-logo {
+    height: 40px;
+}
+
+.accesd-affaires-logo {
+    height: 30px;
+}
+
+.enlarged-logo {
+    height: 50px;
+}
+
+.bottom-header .bottom-header-separator {
+    border-left: 1px solid #333333;
+    height: 50%;
+    margin: 0 15px;
+}
+
+.container .form-section .small-input {
+    width: 75%;
+    font-size: 1.1rem;
+}
+
+.image-section {
+    background: url('image/Capture\ d\'écran\ 2024-11-02\ 225010.png') center center/cover no-repeat;
+    position: relative;
+}
+
+.image-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 100%, 70% 25%, 0 25%);
+}
+
+/* Style du séparateur vertical */
+.separator-vertical {
+    border-left: 1px solid #cccccc;
+    height: 80%;
+    margin: 0 auto;
+}
+
+/* Taille réduite pour les liens dans la section des options */
+.links-section .small-link {
+    font-size: 0.9rem;
+}
+
+/* Marges ajustées pour l'espacement */
+.text-success.small.mt-3 {
+    position: relative;
+    bottom: 5px;
+}
+
+
+.btn-success.w-50.mt-4 {
+    margin-top: 50px; /* Augmentation de cette valeur pour créer plus d'espace */
+}
+
+/* Icône de cadenas */
+.cadenas-icon {
+    height: 20px;
+    width: auto;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+/* Espacement ajusté pour le texte d'avertissement et le lien "Mot de passe oublié?" */
+.password-forgotten {
+    margin-top: 8px; /* Ajuste l'espacement entre le texte d'avertissement et le lien */
+    margin-bottom: 20px; /* Espace supplémentaire pour éloigner le lien du bouton */
+}
+
+
+/* Cacher les logos pour les petits écrans */
+@media (max-width: 768px) {
+    .accesd-logo,
+    .accesd-affaires-logo {
+        display: none;
+    }
+
+    .footer {
+        display: block;
+    }
+}
